@@ -108,7 +108,7 @@
 
 /*
 ! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com
-*/
+*/ 
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -552,6 +552,57 @@ video {
 
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.min-h-\[90vh\] {
+  min-height: 90vh;
+}
+
+.min-w-\[90vh\] {
+  min-width: 90vh;
+}
+
+.min-w-full {
+  min-width: 100%;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .text-9xl {
